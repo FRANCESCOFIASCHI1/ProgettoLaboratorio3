@@ -1,0 +1,4 @@
+SERVER_HOST = localhost
+SERVER_PORT = 6697
+indirizzoMulticast=226.226.226.226
+portaMulticast=4000

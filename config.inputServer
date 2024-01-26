@@ -1,0 +1,6 @@
+PORT=6697
+indirizzoMulticast=226.226.226.226
+portaMulticast=4000
+fileUtentiPath=Utenti.json
+fileHotelPath=Hotels.json
+intervalloAggiornamento=5000
