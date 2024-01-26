@@ -13,13 +13,13 @@ Persistenza dei dati: Salva periodicamente le informazioni sugli utenti, le clas
 Multithreading: Utilizza thread separati per la gestione delle richieste dei clienti e per le attività periodiche come il ricalcolo delle classifiche e il salvataggio dei dati.
 
 <H3>Uso</H3>
-0. **Login/Registrazione**: Gli utenti possono registrarsi o accedere alle funzionalità aggiuntive.
-1. **Ricerca**: Gli utenti possono cercare gli hotel per città o visualizzare tutti gli hotel.
-2. **Invio di recensioni**: Gli utenti registrati possono inviare recensioni sugli hotel.
-3. **Vedi i badge**: Gli utenti possono visualizzare gli ultimi badge guadagnati.
-4. **Verifica tutti gli hotel**
-5. **Cancellazione**: Consente agli utenti di uscire dal proprio account.
-9. **Esci**: Termina l'applicazione.
+0. Login/Registrazione: Gli utenti possono registrarsi o accedere alle funzionalità aggiuntive.
+1. Ricerca**: Gli utenti possono cercare gli hotel per città o visualizzare tutti gli hotel.
+2. Invio di recensioni: Gli utenti registrati possono inviare recensioni sugli hotel.
+3. Vedi i badge: Gli utenti possono visualizzare gli ultimi badge guadagnati.
+4. Verifica tutti gli hotel
+5. Cancellazione: Consente agli utenti di uscire dal proprio account.
+9. Esci: Termina l'applicazione.
 
 <H3>Strutture dati</H3>
 Manutenzione degli hotel: Gli hotel, le informazioni sugli utenti e le recensioni sono memorizzati in file JSON.
