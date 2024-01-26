@@ -1,35 +1,37 @@
-<H1>HOTELIER - Hotel Advisor Service</H1>
+<H1>HOTELIER - Servizio di consulenza alberghiera</H1>
 
-<H3>Overview</H3>
-HOTELIER is a simplified version of the famous TripAdvisor service, focusing on managing hotels, user registration, login, search, and review submission functionalities.
+<H3>Panoramica</H3>
+HOTELIER è una versione semplificata del famoso servizio TripAdvisor, che si concentra sulla gestione degli hotel, sulla registrazione degli utenti, sul login, sulla ricerca e sulle funzionalità di invio delle recensioni.
 
-<H3>Implementation Choices</H3>
-JSON Handling: Utilizes the GSON library for reading and writing JSON files.
-Configuration: Server properties are loaded from a specific configuration file (config.inputServer).
-Client-Server Communication: Employs Java I/O for message exchange between clients and the server.
-Concurrency: Uses a CachedThreadPool to handle multiple client connections concurrently.
-Ranking Algorithm: Calculates hotel rankings based on the timeliness of reviews and review scores.
-Data Persistence: Periodically saves user information, rankings, and reviews to ensure data consistency.
-Multithreading: Utilizes separate threads for client requests handling and periodic tasks like ranking recalculation and data saving.
+<H3>Scelte di implementazione</H3>
+Gestione di JSON: Utilizza la libreria GSON per leggere e scrivere file JSON.
+Configurazione: Le proprietà del server sono caricate da un file di configurazione specifico (config.inputServer).
+Comunicazione client-server: Utilizza Java I/O per lo scambio di messaggi tra i client e il server.
+Concorrenza: Utilizza un CachedThreadPool per gestire più connessioni client in contemporanea.
+Algoritmo di classificazione: Calcola le classifiche degli hotel in base alla tempestività delle recensioni e ai punteggi delle recensioni.
+Persistenza dei dati: Salva periodicamente le informazioni sugli utenti, le classifiche e le recensioni per garantire la coerenza dei dati.
+Multithreading: Utilizza thread separati per la gestione delle richieste dei clienti e per le attività periodiche come il ricalcolo delle classifiche e il salvataggio dei dati.
 
-<H3>Usage</H3>
-Login/Registration: Users can register or log in to access additional functionalities.
-Search: Users can search for hotels by city or view all hotels.
-Review Submission: Registered users can submit reviews for hotels.
-View Badges: Users can view their latest badges earned.
-Logout: Allows users to log out from their accounts.
-Exit: Terminates the application.
+<H3>Uso</H3>
+0. **Login/Registrazione**: Gli utenti possono registrarsi o accedere alle funzionalità aggiuntive.
+1. **Ricerca**: Gli utenti possono cercare gli hotel per città o visualizzare tutti gli hotel.
+2. **Invio di recensioni**: Gli utenti registrati possono inviare recensioni sugli hotel.
+3. **Vedi i badge**: Gli utenti possono visualizzare gli ultimi badge guadagnati.
+4. **Verifica tutti gli hotel**
+5. **Cancellazione**: Consente agli utenti di uscire dal proprio account.
+9. **Esci**: Termina l'applicazione.
 
-<H3>Data Structures</H3>
-Hotel Maintenance: Hotels, user information, and reviews are stored in JSON files.
-User Management: User information is stored in a JSON file containing usernames, passwords, review counts, and login status.
-Review Structure: Reviews consist of hotel name, city, overall rating, and ratings for specific categories.
-Threading and Synchronization
-Server Threads: Uses a CachedThreadPool for managing client connections and separate threads for periodic tasks.
-Client Threads: Utilizes a separate thread for receiving server messages (riceveTask).
+<H3>Strutture dati</H3>
+Manutenzione degli hotel: Gli hotel, le informazioni sugli utenti e le recensioni sono memorizzati in file JSON.
+Gestione degli utenti: Le informazioni sugli utenti sono memorizzate in un file JSON contenente nomi utente, password, numero di recensioni e stato di accesso.
+Struttura delle recensioni: Le recensioni sono composte da nome dell'hotel, città, valutazione complessiva e valutazioni per categorie specifiche.
 
-<H3>Installation and Execution</H3>
-Compile and execute the server and client programs using provided commands.
+<H3>Filtraggio e sincronizzazione</H3>
+Thread del server: Utilizza un CachedThreadPool per gestire le connessioni dei client e thread separati per le attività periodiche.
+Thread del client: Utilizza un thread separato per ricevere i messaggi del server (riceveTask).
 
-<H3>Contributors</H3>
-Francesco Fiaschi (636697), Informatics - UNIPI
+<H3>Installazione ed esecuzione</H3>
+Compilare ed eseguire i programmi server e client usando i comandi forniti.
+
+<H3>Contribuenti</H3>
+Francesco Fiaschi (636697), Informatica - UNIPI
